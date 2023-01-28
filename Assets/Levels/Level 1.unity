@@ -19639,11 +19639,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353346569178223659, guid: 910f7e7ed5d10714e8d5bedd5d5a7af3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.85774
+      value: -15.483639
       objectReference: {fileID: 0}
     - target: {fileID: 5353346569178223659, guid: 910f7e7ed5d10714e8d5bedd5d5a7af3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.979078
+      value: 9.976929
       objectReference: {fileID: 0}
     - target: {fileID: 5353346569178223828, guid: 910f7e7ed5d10714e8d5bedd5d5a7af3, type: 3}
       propertyPath: orthographic size
