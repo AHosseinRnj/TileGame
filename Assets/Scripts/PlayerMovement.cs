@@ -100,8 +100,14 @@ public class PlayerMovement : MonoBehaviour
             playerAnimation.SetTrigger("Dying");
             playerRigidBody.velocity = deathKick;
 
-            FindObjectOfType<GameSession>().ProcessPlayerDeath();
+            Invoke("DethProc", 1f);
+
         }
+    }
+
+    void DethProc()
+    {
+        FindObjectOfType<GameSession>().ProcessPlayerDeath();
     }
 
     bool HasHorizontalSpeed()
