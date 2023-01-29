@@ -11,7 +11,6 @@
 
 ## Game Screenshots
 <img height="350" width="600" src="https://img001.prntscr.com/file/img001/kSCdGlqzTcOPTdT3CJnMtA.png"/>
-<br>
 <img height="350" width="600" src="https://img001.prntscr.com/file/img001/OYcu4MLyT1ipZZsg9l9StA.png"/>
 
 ## Download
