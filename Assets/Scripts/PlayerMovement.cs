@@ -53,6 +53,9 @@ public class PlayerMovement : MonoBehaviour
 
     void OnJump(InputValue value)
     {
+        if (FindObjectOfType<GameSession>().isPaused)
+            return;
+
         if (isAlive)
         {
             if (IsTouchingGroundLayer() || IsTouchingClimbingLayer())
