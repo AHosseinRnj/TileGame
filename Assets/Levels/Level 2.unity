@@ -23107,15 +23107,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5353346569178223659, guid: 910f7e7ed5d10714e8d5bedd5d5a7af3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.8580036
+      value: 2.4899616
       objectReference: {fileID: 0}
     - target: {fileID: 5353346569178223659, guid: 910f7e7ed5d10714e8d5bedd5d5a7af3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.759758
+      value: 23.166492
       objectReference: {fileID: 0}
     - target: {fileID: 5353346569178223828, guid: 910f7e7ed5d10714e8d5bedd5d5a7af3, type: 3}
       propertyPath: orthographic size
-      value: 6.4
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5353346569465684720, guid: 910f7e7ed5d10714e8d5bedd5d5a7af3, type: 3}
       propertyPath: m_BoundingShape2D
