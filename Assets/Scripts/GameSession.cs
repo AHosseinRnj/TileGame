@@ -10,6 +10,13 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
 
+    [SerializeField] GameObject statsCanvas;
+    [SerializeField] GameObject menuCanvas;
+    [SerializeField] GameObject playButton;
+    [SerializeField] GameObject exitButton;
+
+    public bool isPaused = true;
+
     void Awake()
     {
         int gameSessionsCount = FindObjectsOfType<GameSession>().Length;
@@ -18,12 +25,33 @@ public class GameSession : MonoBehaviour
             Destroy(gameObject);
         else
             DontDestroyOnLoad(gameObject);
+
+        ShowMenu();
     }
 
     void Start()
     {
         UpdateLivesText();
         UpdateScoreText();
+    }
+
+    void OnExit()
+    {
+
+        if (!isPaused)
+            ShowMenu();
+        else
+            CloseMenu();
+    }
+
+    public void OnPlayButtonClick()
+    {
+        CloseMenu();
+    }
+
+    public void OnExitButtonClick()
+    {
+        Application.Quit();
     }
 
     public void ProcessPlayerDeath()
@@ -68,5 +96,19 @@ public class GameSession : MonoBehaviour
     void UpdateScoreText()
     {
         scoreText.text = "Score : " + playerScore;
+    }
+
+    void ShowMenu()
+    {
+        isPaused = true;
+        statsCanvas.SetActive(false);
+        menuCanvas.SetActive(true);
+    }
+
+    void CloseMenu()
+    {
+        isPaused = false;
+        statsCanvas.SetActive(true);
+        menuCanvas.SetActive(false);
     }
 }

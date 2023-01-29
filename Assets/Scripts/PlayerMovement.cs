@@ -31,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (FindObjectOfType<GameSession>().isPaused)
+            return;
+
         if (isAlive)
         {
             Run();
@@ -101,7 +104,6 @@ public class PlayerMovement : MonoBehaviour
             playerRigidBody.velocity = deathKick;
 
             Invoke("DethProc", 1f);
-
         }
     }
 
