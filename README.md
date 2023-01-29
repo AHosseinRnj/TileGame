@@ -2,10 +2,6 @@
   <img height="120" width="120" src="https://img001.prntscr.com/file/img001/JYMQLdDZSoKk8PPg2gFwww.png"/>
 </p>
 
-<p align="center" style="font-size:45px;font-style:italic;font-family: 'Trebuchet MS', sans-serif;">
-	TileGame
-</p>
-
 # TileGame 1.0
 >A 2D platformer game project powered by Unity.
 
